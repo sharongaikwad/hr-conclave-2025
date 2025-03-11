@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HR Leadership Conclave & Excellence Awards 2025</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- You can also include the inline styles below or move them to styles.css -->
+  <style>
+    /* Global Styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      line-height: 1.6;
+      background: #f4f4f4;
+      color: #333;
+    }
+    /* Header */
+    header {
+      background: #005a9c;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+    }
+    /* Navigation Tabs */
+    .nav-tabs {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      background: #f1f1f1;
+    }
+    .nav-tabs li {
+      margin: 0;
+    }
+    .nav-tabs li a {
+      display: block;
+      padding: 15px 20px;
+      text-decoration: none;
+      color: #333;
+      transition: background-color 0.3s;
+    }
+    .nav-tabs li a:hover {
+      background: #ddd;
+    }
+    .nav-tabs li a.active {
+      background: #ccc;
+    }
+    /* Hero Section */
+    #hero {
+      background: url('bg-image.jpg') no-repeat center center/cover;
+      color: #fff;
+      text-align: center;
+      padding: 100px 20px;
+    }
+    #hero .cta-button {
+      display: inline-block;
+      padding: 10px 20px;
+      background: #e8491d;
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 20px;
+    }
+    /* Tabs Navigation & Content */
+    .tabs {
+      display: flex;
+      justify-content: center;
+      margin: 20px 0;
+    }
+    .tablink {
+      cursor: pointer;
+      padding: 10px 20px;
+      border: none;
+      background: #f1f1f1;
+      outline: none;
+      transition: background-color 0.3s;
+      margin-right: 2px;
+      font-size: 16px;
+    }
+    .tablink:hover {
+      background: #ddd;
+    }
+    .tablink.active {
+      background: #ccc;
+    }
+    .tabcontent {
+      display: none; /* Hidden by default */
+      padding: 20px;
+      border: 1px solid #ccc;
+      background: #fff;
+      margin: 0 20px 20px;
+    }
+    /* About Section */
+    #about {
+      padding: 40px 20px;
+      background: #fff;
+      margin: 20px;
+      text-align: center;
+    }
+    #about h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+    #about p {
+      font-size: 1.1em;
+      line-height: 1.6;
+    }
+    /* Why Attend Section */
+    #why-attend {
+      padding: 40px 20px;
+      background: #fff;
+      margin: 20px;
+    }
+    #why-attend h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 2.2em;
+    }
+    .why-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+    .why-box {
+      flex: 1 1 280px;
+      max-width: 300px;
+      background: #f9f9f9;
+      padding: 20px;
+      border: 2px solid transparent;
+      border-radius: 8px;
+      transition: all 0.3s ease;
+      cursor: pointer;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .why-box h3 {
+      font-size: 1.5em;
+      margin-bottom: 10px;
+    }
+    .why-box p {
+      font-size: 1em;
+      line-height: 1.5;
+    }
+    .why-box:hover {
+      transform: translateY(-5px);
+    }
+    .why-box.selected {
+      border-color: #005a9c;
+      background: #e0f0ff;
+    }
+    /* Additional Sections (Highlights, Discussion) */
+    #highlights, #discussion {
+      padding: 40px 20px;
+      background: #fff;
+      margin: 20px;
+    }
+    #highlights h2, #discussion h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    #highlights ul, #discussion ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    #highlights li, #discussion li {
+      background: #f4f4f4;
+      margin: 10px 0;
+      padding: 10px;
+    }
+    /* Footer */
+    footer {
+      background: #333;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+    }
+    .footer-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: center;
+    }
+    .footer-section {
+      flex: 1 1 200px;
+      margin: 10px;
+    }
+    .footer-logos img.footer-logo {
+      max-height: 50px;
+      margin: 0 10px;
+    }
+    .footer-social a {
+      margin: 0 5px;
+    }
+    .social-icon {
+      width: 30px;
+      height: 30px;
+    }
+    .qr-code {
+      width: 80px;
+      height: 80px;
+    }
+    .footer-host a {
+      color: #fff;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>HR Leadership Conclave & Excellence Awards 2025</h1>
+    <p>Talent Development and Leadership Challenges and Opportunities in the Era of AI</p>
+    <nav>
+      <ul class="nav-tabs">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="agenda.html">Agenda &amp; Speakers</a></li>
+        <li><a href="media.html">Media Coverage</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <div class="hero-content">
+      <h2>Join Us on 24 March 2025</h2>
+      <p><strong>Time:</strong> 4:00 PM – 9:00 PM (Networking Cocktail Dinner to follow)</p>
+      <p><strong>Venue:</strong> India International Centre, New Delhi</p>
+      <a href="https://tinyurl.com/ybxk96cb" class="cta-button">Register Here</a>
+    </div>
+  </section>
+
+  <!-- Tabs Navigation -->
+  <div class="tabs">
+    <button class="tablink active" onclick="openTab(event, 'Overview')">Overview</button>
+    <button class="tablink" onclick="openTab(event, 'Highlights')">Highlights</button>
+    <button class="tablink" onclick="openTab(event, 'Schedule')">Schedule</button>
+  </div>
+
+  <!-- Tab Content -->
+  <div id="Overview" class="tabcontent" style="display: block;">
+    <h3>Overview</h3>
+    <p>This section contains general information about the event.</p>
+  </div>
+
+  <div id="Highlights" class="tabcontent">
+    <h3>Highlights</h3>
+    <p>Here you'll find details about speakers, awards, and more.</p>
+  </div>
+
+  <div id="Schedule" class="tabcontent">
+    <h3>Schedule</h3>
+    <p>Details about the event's schedule and key sessions.</p>
+  </div>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About the Event</h2>
+    <p>
+      The HR Leadership Conclave & Excellence Awards 2025 is a premier gathering designed to explore the evolving landscape of talent management, leadership development, and AI integration in HR. Learn from over 30 distinguished speakers and industry experts through panel discussions, roundtables, and interactive sessions.
+    </p>
+  </section>
+
+  <!-- Why Attend Section (Moved below About Section) -->
+  <section id="why-attend">
+    <h2>Why Attend?</h2>
+    <div class="why-container">
+      <div class="why-box" onclick="selectBox(this)">
+        <h3>Gain Industry Insights</h3>
+        <p>Learn from leading HR professionals and experts about the latest trends in HR and AI.</p>
+      </div>
+      <div class="why-box" onclick="selectBox(this)">
+        <h3>Expand Your Network</h3>
+        <p>Connect with top HR professionals, CHROs, and business leaders from across the industry.</p>
+      </div>
+      <div class="why-box" onclick="selectBox(this)">
+        <h3>Unlock AI Strategies</h3>
+        <p>Discover innovative AI strategies to transform recruitment and workforce management.</p>
+      </div>
+      <div class="why-box" onclick="selectBox(this)">
+        <h3>Enhance Leadership Skills</h3>
+        <p>Gain actionable insights to boost leadership capabilities and drive organizational success.</p>
+      </div>
+      <div class="why-box" onclick="selectBox(this)">
+        <h3>Exclusive Awards</h3>
+        <p>Celebrate HR excellence and be recognized among the best in the industry.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Event Highlights Section -->
+  <section id="highlights">
+    <h2>Event Highlights</h2>
+    <ul>
+      <li>30+ Distinguished Speakers & Industry Experts</li>
+      <li>In-depth Panel Discussions & Interactive Q&A Sessions</li>
+      <li>HR Leaders Excellence Awards for outstanding contributions</li>
+      <li>Networking opportunities with top HR professionals</li>
+    </ul>
+  </section>
+
+  <!-- Discussion Pointers Section -->
+  <section id="discussion">
+    <h2>Key Discussion Pointers</h2>
+    <ul>
+      <li>The Future of HR in the AI Era</li>
+      <li>AI-Powered Talent Development & Upskilling</li>
+      <li>Human + AI Leadership Models</li>
+      <li>HR Tech & Innovation</li>
+      <li>Ethical AI in HR</li>
+    </ul>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <!-- Logos Section -->
+      <div class="footer-section footer-logos">
+        <img src="images/pcu-logo.png" alt="PCU Logo" class="footer-logo">
+        <img src="images/hrshapers-logo.png" alt="HR Shapers Logo" class="footer-logo">
+      </div>
+      <!-- Social Media Links -->
+      <div class="footer-section footer-social">
+        <a href="https://www.facebook.com" target="_blank">
+          <img src="images/facebook-icon.png" alt="Facebook" class="social-icon">
+        </a>
+        <a href="https://twitter.com" target="_blank">
+          <img src="images/twitter-icon.png" alt="Twitter" class="social-icon">
+        </a>
+        <a href="https://www.linkedin.com" target="_blank">
+          <img src="images/linkedin-icon.png" alt="LinkedIn" class="social-icon">
+        </a>
+      </div>
+      <!-- QR Code Section -->
+      <div class="footer-section footer-qr">
+        <img src="images/brochure-qr.png" alt="Download Brochure QR Code" class="qr-code">
+        <p>Scan to download brochure</p>
+      </div>
+      <!-- Email Contact -->
+      <div class="footer-section footer-contact">
+        <p>Email: <a href="mailto:info@hrconclave2025.com">info@hrconclave2025.com</a></p>
+      </div>
+      <!-- Hosted By -->
+      <div class="footer-section footer-host">
+        <p>Hosted by <br> Pimpri Chinchwad University and HR Shapers</p>
+      </div>
+    </div>
+  </footer>
+  
+  <script src="scripts.js"></script>
+  <script>
+    function selectBox(element) {
+      // Remove "selected" class from all boxes
+      const boxes = document.querySelectorAll('.why-box');
+      boxes.forEach(box => box.classList.remove('selected'));
+      // Add "selected" class to the clicked box
+      element.classList.add('selected');
+    }
+  </script>
+</body>
+</html>
